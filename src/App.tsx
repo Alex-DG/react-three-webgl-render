@@ -1,10 +1,9 @@
 import React from 'react'
-import './App.css'
 
-import Cube from './Cube'
+import Cube from './components/Cube'
 
-const App: React.FC = () => {
-  return <Cube />
-}
+import logo from './assets/logos/javascript.svg'
+
+const App: React.FC = () => <Cube asset={logo} />
 
 export default App
