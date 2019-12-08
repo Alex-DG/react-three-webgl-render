@@ -4,7 +4,11 @@ import * as THREE from 'three'
 //@ts-ignore
 import threeOrbitControls from 'three-orbit-controls'
 
-const Cube = ({ asset }: any) => {
+type CubeProps = {
+  asset: string
+}
+
+const Cube = ({ asset }: CubeProps) => {
   const canvas = useRef(null)
   const scene = new THREE.Scene()
   const orbitControls = threeOrbitControls(THREE)
